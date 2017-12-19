@@ -1,61 +1,106 @@
-.content {
-width: 70%;
-margin: 0 auto;
-height: 200px;
+.background {
+	background: url('../img/fon.jpg') no-repeat;
+}
+.central-wrapper {
+	width: 900px;
+	margin: 0 auto;
+	height: 100%;
 }
 
-.block2 {
-	width: 500px;
-	margin: 20px;
-	border: 2px solid #e34334;
+.menu { 
+	width: 100%;
+	margin: 0 auto;
+	height: 4.5rem;
 }
 
-.menu{ 
-width: 800px;
-margin: 0 auto;
+.home__beckground {
+	float:left;
+	width: 2rem;
+	height: 2rem;
 }
 
-.el1{
-float: left;
-margin:0 auto;
-width: 200px;
-padding: 20px;
-padding-left: 270px;
+.menu__item {
+	background: #DB7093 ;
+	border-radius: 0.95rem;
+	border: 1px solid #C71585;
+	float: left;
+	width: 20%;
+	padding: 1.15rem;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 20px;
+	list-style: none; /*убрать точки пункты списка*/
+}
+.content__title{
+	position: relative;
+	border-radius: 0.95rem;
+	border: 1px solid #C71585;
+	float: left;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 32px;
+	list-style: none; 
+	color: pink;
+	font-family: CORBEL;
+}
+.content__title:hover {
+	/*background: #271347;*/
+	width: 100%;
+}
+.tooltip {
+	position: absolute;
+	left:0px;
+	bottom: -80px;
+	display: none;
+	background: #271347;
+	border: 1px solid black;
+	font-family: CORBEL;
+	border-radius: 0.95rem;
+	width: 100%;
+}
+.content__title:hover .tooltip{
+	display: inline;
+}
+.content__img{
+	width:650px;
+	text-align: center;
+	margin: 0 auto;
+}
+.content__img-ul{
+	position: absolute;
+	width:196px;
+	left:753px;
+	bottom: +320px;
+}
+.content__img-ul:hover{
+	border: 2px solid #C71585;
+	border-radius: 5rem;
+}
+.menu__link {
+	color: pink;
+	font-family: ALGERIAN;
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+	padding: 25;
+	margin: 0 auto;
 }
 
-.el2{
-color: pink;
-font-family: ALGERIAN;
-background: #DB7093 ;
-border-radius: 15;
-border: 1px solid #C71585;
-float: left;
-width: 150px;
-padding: 20px;
-/*align: center;*/
-margin: 0 auto;
-font-size: 18px;
+.menu__item_game {
+	width: 50%;
+	padding: 1.15rem;
+	margin-left: 21%;
 }
 
-.el3{
-color: pink;
-font-family: CURSIVE;
-background: #DB7093 ;
-border: 3px solid #C71585;
-float: left;
-width: 500px;
-padding: 10px;
-margin: 0 auto;
-}
-
-.clear{
-clear: both;
+.clear {
+	clear: both;
 }
 
 
 
 ___________________________________
-align= "center";                   |
+text-align= "center";                   |
 float: center;                     |
 display: inline-block;             |
 padding-right: 100px;              |
