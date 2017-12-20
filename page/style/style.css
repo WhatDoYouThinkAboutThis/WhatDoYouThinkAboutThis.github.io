@@ -1,6 +1,11 @@
+body {
+	margin: 0;
+}
+
 .background {
 	background: url('../img/fon.jpg') no-repeat;
 }
+
 .central-wrapper {
 	width: 900px;
 	margin: 0 auto;
@@ -32,22 +37,15 @@
 	list-style: none; /*убрать точки пункты списка*/
 }
 .content__title{
-	position: relative;
 	border-radius: 0.95rem;
 	border: 1px solid #C71585;
-	float: left;
-	width: 100%;
 	text-align: center;
 	margin: 0 auto;
 	font-size: 32px;
-	list-style: none; 
 	color: pink;
 	font-family: CORBEL;
 }
-.content__title:hover {
-	/*background: #271347;*/
-	width: 100%;
-}
+
 .tooltip {
 	position: absolute;
 	left:0px;
@@ -59,6 +57,8 @@
 	border-radius: 0.95rem;
 	width: 100%;
 }
+
+
 .content__title:hover .tooltip{
 	display: inline;
 }
@@ -66,16 +66,35 @@
 	width:650px;
 	text-align: center;
 	margin: 0 auto;
+	position: relative;
 }
-.content__img-ul{
+.content__img_ul{
 	position: absolute;
-	width:196px;
-	left:753px;
-	bottom: +320px;
+	width: 196px;
+	top: 3px;
+    right: 58px;
+	background: url('../img/ul1.png') no-repeat;
 }
-.content__img-ul:hover{
+.content__img_ul:hover{
 	border: 2px solid #C71585;
 	border-radius: 5rem;
+	top: 1px;
+    right: 56px;
+}
+
+.content__img_ul:hover.tooltip_ul{
+	display: inline;
+}
+.tooltip_ul {
+	position: absolute;
+	left:0px;
+	bottom: -80px;
+	display: none;
+	background: #271347;
+	border: 1px solid black;
+	font-family: CORBEL;
+	border-radius: 0.95rem;
+	width: 50px;
 }
 .menu__link {
 	color: pink;
