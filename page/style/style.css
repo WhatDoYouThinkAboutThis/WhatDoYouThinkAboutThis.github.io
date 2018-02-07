@@ -1,9 +1,5 @@
-body {
-	margin: 0;
-}
-
-.background {
-	background: url('../img/fon.jpg') no-repeat;
+.main__content {
+	background: url('../img/fon.jpg');
 }
 
 .central-wrapper {
@@ -18,7 +14,7 @@ body {
 	height: 4.5rem;
 }
 
-.home__beckground {
+.home-button__beckg {
 	float:left;
 	width: 2rem;
 	height: 2rem;
@@ -36,7 +32,7 @@ body {
 	font-size: 20px;
 	list-style: none; /*убрать точки пункты списка*/
 }
-.content__title{
+.l-title{
 	border-radius: 0.95rem;
 	border: 1px solid #C71585;
 	text-align: center;
@@ -59,37 +55,38 @@ body {
 }
 
 
-.content__title:hover .tooltip{
+.content__title:hover .tooltip {
 	display: inline;
 }
-.content__img{
+.content {
 	background: url('../img/murder.jpg') no-repeat;
-	width:650px;
-	height: 650px; /* изменить*/
+	width: 800px;
+	height: 690px; 
 	text-align: center;
 	margin: 0 auto;
 	position: relative;
 }
-.content__img_ul{
+.content__item_type_blood {
 	position: absolute;
 	width: 180px;
 	height: 180px;
-	top: 16px;
-    right: 35px;
+	top: 40px;
+    right: 80px;
 	display: inline;
 }
-.content__img_ul:hover{
+
+.content__item_type_blood:hover {
 	background: url('../img/ul11.png') no-repeat;
  }
 
-.tooltip_ul {
+.tooltip {
 	left:0px;
 	bottom: 430px;
 	width: 150px;
 	display:none;
 }
 
-.content__img_ul:hover .tooltip_ul{
+.content__item_type_blood:hover .tooltip{
 	display: block;
 	background: #271347;
 	border: 1px solid black;
@@ -100,54 +97,54 @@ body {
 	margin-top: 200px;
 }
 
-.content__img_ul1{
+.content__item_type_weapon{
 	position: absolute;
 	width: 100px;
 	height: 100px;
-	bottom: 185px;
-    left: 254px;
+	top: 332px;
+    left: 331px;
 	display: inline;
 }
 
-.content__img_ul1:hover{
+.content__item_type_weapon:hover{
 	background: url('../img/ul21.png') no-repeat;
  }
  
-.content__img_ul2{
+.content__item_type_paper{
 	position: absolute;
 	width: 150px;
 	height: 120px;
-	top: 159px;
-    left: 97px;
+	top: 213px;
+    left: 120px;
 	display: inline;
 }
-.content__img_ul2:hover{
+.content__item_type_paper:hover{
 	background: url('../img/ul31.png') no-repeat;
  }
 
-.content__img_ul3{
+.content__item_type_power-socket{
 	position: absolute;
 	width: 80px;
 	height: 70px;
-	bottom: 240px;
-    left: 220px;
+	top: 296px;
+    left: 288px;
 	display: inline;
 } 
 
-.content__img_ul3:hover{
+.content__item_type_power-socket:hover{
 	background: url('../img/ul41.png') no-repeat;
  }
 
-.content__img_ul4{
+.content__item_type_sneakers{
 	position: absolute;
 	width: 150px;
 	height: 60px;
-	bottom: 1px;
-    left: 279px;
+	bottom: 21px;
+    left: 366px;
 	display: inline;
 }
 
-.content__img_ul4:hover{
+.content__item_type_sneakers:hover{
 	background: url('../img/ul51.png') no-repeat;
  }
  
@@ -180,9 +177,10 @@ body {
     overflow: hidden;
     position: fixed;
     top:0px;
+	display: none;
 }
 
-.popup__content {
+.popup__wraper {
     margin: 40px auto 0px auto;
     width: 900px;
     height: 500px;
@@ -192,12 +190,30 @@ body {
     box-shadow: 0px 0px 10px #000;
 }
 
- .popup__img {
+.popup__item {
 	width: 400px;
-	height: 200px;
-	float: left;
+	height: 450px;
 	margin: 20px;
+	float: left;
+}
+
+.popup__img_kill {
+	width: 400px;
+	height: 230px;
+	background: url('../img/kill.jpg');
+	background-size: cover;
  }
+ 
+.popup__img_suicide {
+	width: 400px;
+	height: 230px;
+	background: url('../img/suicide.jpg');
+	background-size: cover;
+}
+
+.text {
+	text-align: center;
+}
 
 .l-clear {
 	clear: both; /*добавить из картинки */
@@ -206,12 +222,12 @@ body {
 
 
 ___________________________________
-text-align= "center";                   |
+text-align= "center";              |
 float: center;                     |
-display: inline-block;             |
+display: block;                    |
 padding-right: 100px;              |
-background = F:/Универ/Page/Fon.jpg|
-font-family: CURSIVE, ALGERIAN; 
-border: 3px solid #e34334;   |
-margin:auto;!!!!          
+background = url('../Page/Fon.jpg')|
+font-family: CURSIVE, ALGERIAN;    | 
+border: 3px solid #e34334;         |
+margin:auto;!!!!                   |
 ___________________________________|
