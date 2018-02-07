@@ -4,23 +4,36 @@
 <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-<main class="background">
-	<div class="home">
-			<a class="home__link" href="mywork.html"><img class="home__beckground" src="img/buttonhome.png"></a>
+<main class="background"><!--main__content-->
+	<div class="home"><!--home-button-->
+			<a class="home__link" href="mywork.html"><img class="home__beckground" src="img/buttonhome.png"></a> <!--home-button__link--> <!--home-button__beckg -->
 	</div>
 	<div class="central-wrapper">
-		<div class ="content__title">Hello! I propose to play a game 
+		<h1 class ="content__title">Hello! I propose to play a game <!--l-title-->
 			<!--<span class="tooltip">Отлично, предлагаю сыграть в игру. Смысл задания ответить на вопрос: убийство или суицид? </span>-->
+		</h1> 
+		<div class="content__img"> <!-- content-->
+			<div class="content__img content__img_ul"> <!--content__item content__item_type_blood -->
+				<p class="tooltip_ul">Судя по пятну крови, причиной  <!--tooltip-->
+				смерти без всяких сомнений послужил выстрел </p></div>
+			<div class="content__img content__img_ul1"></div>  <!--content__item content__item_type_..-->
+			<div class="content__img content__img_ul2"></div>  <!--content__item content__item_type_.. -->
+			<div class="content__img content__img_ul3"></div>  <!--content__item content__item_type_.. -->
+			<div class="content__img content__img_ul4"></div>  <!--content__item content__item_type_.. -->
 		</div> 
-		<div class="content__img">
-			<img class="content__img" src="img/murder.jpg">
-			<div class="content__img content__img_ul">
-				<!--<span class="tooltip_ul">Судя по пятну крови, причиной 
-				смерти без всяких сомнений послужил выстрел </span>*/-->
+	</div>
+	<div class="popup">
+		<div class="popup__content"> <!-- popup__wraper -->
+			<div class="popup__item"> 
+				<img class="popup__img" src="img/suicide.jpg"> <!-- убрать картинки--> 
+				<div>Убийство</div>
 			</div>
+			<div class="popup__item">
+				<img class="popup__img" src="img/kill2.jpg">
+				<div>Самоубийство</div>
+			</div>		
 		</div>
 	</div>
-
 </main>
 </body>
 </html>

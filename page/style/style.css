@@ -63,39 +63,100 @@ body {
 	display: inline;
 }
 .content__img{
+	background: url('../img/murder.jpg') no-repeat;
 	width:650px;
+	height: 650px; /* изменить*/
 	text-align: center;
 	margin: 0 auto;
 	position: relative;
 }
 .content__img_ul{
 	position: absolute;
-	width: 196px;
-	top: 3px;
-    right: 58px;
-	background: url('../img/ul1.png') no-repeat;
-}
-.content__img_ul:hover{
-	border: 2px solid #C71585;
-	border-radius: 5rem;
-	top: 1px;
-    right: 56px;
-}
-
-.content__img_ul:hover.tooltip_ul{
+	width: 180px;
+	height: 180px;
+	top: 16px;
+    right: 35px;
 	display: inline;
 }
+.content__img_ul:hover{
+	background: url('../img/ul11.png') no-repeat;
+ }
+
 .tooltip_ul {
-	position: absolute;
 	left:0px;
-	bottom: -80px;
-	display: none;
+	bottom: 430px;
+	width: 150px;
+	display:none;
+}
+
+.content__img_ul:hover .tooltip_ul{
+	display: block;
 	background: #271347;
 	border: 1px solid black;
 	font-family: CORBEL;
-	border-radius: 0.95rem;
-	width: 50px;
+	border-radius: 16px;
+	font-size: 20px;
+	left: 100px;
+	margin-top: 200px;
 }
+
+.content__img_ul1{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	bottom: 185px;
+    left: 254px;
+	display: inline;
+}
+
+.content__img_ul1:hover{
+	background: url('../img/ul21.png') no-repeat;
+ }
+ 
+.content__img_ul2{
+	position: absolute;
+	width: 150px;
+	height: 120px;
+	top: 159px;
+    left: 97px;
+	display: inline;
+}
+.content__img_ul2:hover{
+	background: url('../img/ul31.png') no-repeat;
+ }
+
+.content__img_ul3{
+	position: absolute;
+	width: 80px;
+	height: 70px;
+	bottom: 240px;
+    left: 220px;
+	display: inline;
+} 
+
+.content__img_ul3:hover{
+	background: url('../img/ul41.png') no-repeat;
+ }
+
+.content__img_ul4{
+	position: absolute;
+	width: 150px;
+	height: 60px;
+	bottom: 1px;
+    left: 279px;
+	display: inline;
+}
+
+.content__img_ul4:hover{
+	background: url('../img/ul51.png') no-repeat;
+ }
+ 
+ .content__img_overgame {
+	width: 400px;
+	height: 200px;
+	float: left;
+ }
+
 .menu__link {
 	color: pink;
 	font-family: ALGERIAN;
@@ -112,8 +173,34 @@ body {
 	margin-left: 21%;
 }
 
-.clear {
-	clear: both;
+.popup {
+    width:100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+    position: fixed;
+    top:0px;
+}
+
+.popup__content {
+    margin: 40px auto 0px auto;
+    width: 900px;
+    height: 500px;
+    padding: 10px;
+    background-color: #c5c5c5;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+ .popup__img {
+	width: 400px;
+	height: 200px;
+	float: left;
+	margin: 20px;
+ }
+
+.l-clear {
+	clear: both; /*добавить из картинки */
 }
 
 
