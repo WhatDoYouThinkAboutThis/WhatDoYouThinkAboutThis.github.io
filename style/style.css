@@ -1,11 +1,13 @@
 .main__content {
-	background: url('../img/fon.jpg');
+	background: url('../img/blackfon.jpg');
+	min-width: 960px;
+	overflow-y: hidden;
+	min-height: 100%;
 }
 
 .central-wrapper {
 	width: 900px;
 	margin: 0 auto;
-	height: 100%;
 }
 
 .menu { 
@@ -31,15 +33,6 @@
 	margin: 0 auto;
 	font-size: 20px;
 	list-style: none; /*убрать точки пункты списка*/
-}
-.l-title{
-	border-radius: 0.95rem;
-	border: 1px solid #C71585;
-	text-align: center;
-	margin: 0 auto;
-	font-size: 32px;
-	color: pink;
-	font-family: CORBEL;
 }
 
 .tooltip {
@@ -180,6 +173,14 @@
 	display: none;
 }
 
+.popup_suicide {
+	display: none;
+}
+
+.popup_kill {
+	display: none:
+}
+
 .popup__wraper {
     margin: 40px auto 0px auto;
     width: 900px;
@@ -188,6 +189,7 @@
     background-color: #c5c5c5;
     border-radius: 5px;
     box-shadow: 0px 0px 10px #000;
+	position: relative;
 }
 
 .popup__item {
@@ -197,22 +199,165 @@
 	float: left;
 }
 
+.popup__img {
+	width: 860px;
+    height: 400px;
+}
+
 .popup__img_kill {
-	width: 400px;
-	height: 230px;
-	background: url('../img/kill.jpg');
-	background-size: cover;
+	background: url('../img/sherlok.jpg') no-repeat;
+	background-size: contain;
+	background-position: center;
  }
  
 .popup__img_suicide {
-	width: 400px;
-	height: 230px;
-	background: url('../img/suicide.jpg');
-	background-size: cover;
+	background: url('../img/over.png') no-repeat;
+	background-size: contain;
+	background-position: center;
 }
 
-.text {
+.label__checkbox{  
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	cursor: pointer;
+	color: pink;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 20px;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 5px;  
+	margin-right: 30px;
+	float:left;
+}
+
+.label__checkbox:last-child{
+	margin-bottom: 50px;
+}
+.label__checkbox input[type="radio"],
+.label__checkbox input[type="checkbox"]{
+	display: block;
+	position: absolute;
+	margin: 0;
+	opacity: 0;
+}
+.radio_img{ 
+	position: absolute; 
+	width: 22px;
+	height: 22px;
+	top: 0px;
+	left: 0px;
+	background: white;
+	border: 2px solid #C71585;
+	border-radius: 50%;
+}
+.radio_img:after{
+	content: "";
+	background: #C71585;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: 24%;
+	left: 25%;
+	border-radius: 50%;
+	display: block;
+	opacity: 0;
+}
+.label__checkbox input[type="radio"]:checked + .radio_img:after{
+	opacity: 100;
+}
+.checkbox_img{ 
+	position: absolute; 
+	width: 22px;
+	height: 22px;
+	top: 0px;
+	left: 0px;
+	background: white;
+	border: 2px solid #c1c1c1;
+	border-radius: 25%;
+}
+.checkbox_img:after{
+	content: "";
+	background-image: url('../img/check.png');
+	width: 23px;
+	height: 19px;
+	position: absolute;
+	top: -11%;
+	left: 10%;  
+	display: block;
+	opacity: 0;
+}
+.label__checkbox input[type="checkbox"]:checked + .checkbox_img:after{
+	opacity: 100;
+}
+
+.wraper-checkbox{
+	border-radius: 16px;
 	text-align: center;
+	margin: 0 auto;
+	width: 500px;
+	height: 50px
+}
+
+.b-button {
+	background: white;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 5px 10px;
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-right: 10px;
+	font-family: Underdog;
+	font-size: 20px;
+}
+
+.b-button:active {
+	color: #C71585;
+	background-color: gray;
+}
+
+
+.b-button_close {
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: #c5c5c5;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 16px;
+	border-radius: 25%;
+	position:absolute;
+	top: -25px;
+	right: -25px;
+}
+
+.l-title{
+	border-radius: 0.95rem;
+	border: 1px solid #C71585;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 32px;
+	color: pink;
+	font-family: Underdog;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.l-text {
+	text-align: center;
+	margin: 0 auto;
+	font-size: 32px;
+	width: 860px;
+	color: #C71585;
+	margin: 10px;
+}
+.l-text_kill {
+	font-family: Marck Script;
+}
+
+.l-text_suicid {
+	font-family: Kelly Slab;
 }
 
 .l-clear {

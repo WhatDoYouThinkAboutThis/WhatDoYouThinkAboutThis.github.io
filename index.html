@@ -3,11 +3,15 @@
 <title>Game</title> 
 <link rel="stylesheet" href="style/normalize.css">
 <link rel="stylesheet" href="style/style.css">
+<link href="https://fonts.googleapis.com/css?family=Kelly+Slab|Marck+Script|Pacifico|Underdog" rel="stylesheet">
+<script src="js/jquery-3-3-1.min.js"></script>
+<script src="js/main.js"></script>
+<link rel="icon" href="img/icon.png" type="image/x-icon">
 </head>
 <body>
-<main class="main__content">
+<main class="main__content"> 
 	<div class="home-button">
-			<a class="home-button__link" href="mywork.html"><img class="home-button__beckg" src="img/buttonhome.png"></a> 
+		<a class="home-button__link" href="mywork.html"><img class="home-button__beckg" src="img/buttonhome.png"></a> 
 	</div>
 	<div class="central-wrapper">
 		<h1 class ="l-title">Hello! I propose to play a game <!--l-title-->
@@ -22,20 +26,38 @@
 			<div class="content__img content__item_type_power-socket"></div>
 			<div class="content__img content__item_type_sneakers"></div> 
 		</div> 
+		<div class="wraper-checkbox">
+			<!--<label class="label__checkbox">
+				<input type="radio" id="radio-1" name="price-radio" value="1" >
+				<span class="radio_img"> </span> Убийство  
+			</label>
+			<label class="label__checkbox">
+				<input type="radio" id="radio-1" name="price-radio" value="1" >
+				<span class="radio_img"> </span> Самоубийство  
+			</label>-->
+		  <a class="b-button b-button_kill">Убийство!</a>
+		  <a class="b-button b-button_suicid">Самоубийство!</a>
+		</div>
 	</div>
-	<div class="popup">
+	<div class="popup popup_suicide">
 		<div class="popup__wraper"> 
-			<div class="popup__item">
-				<div class="popup__img popup__img_kill"></div>
-				<p class="text">Убийство</p>
-			</div>
+			<span class="b-button b-button_close">X</span>
 			<div class="popup__item">
 				<div class="popup__img popup__img_suicide"></div>
-				<p class="text">Самоубийство</p>
+				<p class="l-text l-text_suicid">К сожалению, Вы проиграли</p>
+			</div>
+		</div>
+	</div>
+	<div class="popup popup_kill">
+		<div class="popup__wraper"> 
+			<span class="b-button b-button_close">X</span>
+			<div class="popup__item">
+				<div class="popup__img popup__img_kill"></div>
+				<p class="l-text l-text_kill">Поздравляю, Вы выиграли!</p>
 			</div>		
 		</div>
 	</div>
-	<!--<button class="button">Дать ответ</button>-->
+
 </main>
 </body>
 </html>
